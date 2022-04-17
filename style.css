@@ -1,0 +1,207 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Nunito', sans-serif;
+}
+.nav-container{
+    width: 100%;
+    background-color:rgb(143, 199, 231);
+}
+.navbar{
+    display:grid;
+    grid-template-columns: 0.2fr auto 1fr;
+    align-items: center;
+    height: 80px;
+    width: 90%;
+    max-width: 1720px;
+    margin: 0 auto;
+}
+#navbar-logo{
+    background-color: skyblue;
+    color:rgb(248, 15, 46);
+    justify-self:start ;
+    margin-left: 20px;
+}
+#navbar-logo{
+    cursor: pointer;
+}
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    list-style: none;
+    text-align: center;
+    width: 70%;
+    justify-self: end;
+}
+.nav-links{
+    color: rgb(153, 51, 51);
+    text-decoration: underline;
+
+}
+.nav-links:hover{
+    color: rgb(0, 139, 35);
+    transition: all 0.2s ease-out;
+}
+
+
+
+.menu-toggle .bar {
+    width: 25px;
+    height:3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-out;
+    background: wheat;
+}
+
+@media screen and (max-width:600px) {
+    .nav-container {
+        position: relative;
+    }
+        .nav-menu {
+            display: grid;
+            grid-template-columns: auto;
+            background: yellowgreen;
+            margin: 0;
+            width: 100%;
+            position: absolute;
+            top: 80px;
+            left: -100%;
+            opacity: 0;
+            transition: all 05s ease;
+
+        }
+        #navbar-logo {
+            margin-left:20px;
+        }
+        .nav-menu.active{
+            background: red;
+            left: 0;
+            opacity: 1;
+            transition: all 0.5s ease;
+        }
+        .nav-links{
+            text-align: center;
+            line-height: 60px;
+            width: 100%;
+            display: table;
+        }
+        .nav-links:hover {
+            background-color: blue;
+            color: tomato;
+            transition: all 0.4s ease-out;
+        }
+        .navbar {
+            width: 100%;
+        }
+        #mobile-menu {
+            position: absolute;
+            top: 20%;
+            right: 5%;
+            transform: translate(5%, 20%);
+        }
+        .menu-toggle .bar {
+            display: block;
+            cursor: pointer;
+
+        }
+        .menu-toggle :hover {
+            cursor: pointer;
+        }
+        #mobile-menu.is-active .bar:nth-child(2){
+            opacity: 0;
+        }
+        #mobile-menu.is-active .bar:nth-child(1){
+            transform: translate(8px) rotate(45 deg);
+        
+        }
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family:'Nunito', sans-serif;
+        }
+    }
+    
+    h1{
+        background-color: brown;
+        font-family:'Times New Roman', Times, serif;
+        color:aqua;
+        
+    }
+    
+    
+        
+    
+
+    .pictures-container
+    {
+        max-width: 300;
+        min-width: fit-content;
+        margin: auto;
+
+       /** background:rgb(9, 181, 224) ;
+        overflow: auto;
+       /** border: 5px solid royalblue;*/
+    }
+    
+    .pic {
+        max-width: fit-content;
+        min-width: fit-content;
+        max-height: fit-content;
+        width: auto;
+        margin: auto;
+        overflow: hidden;   
+    }
+
+@media screen and (max-width:600px) {
+    .pictures-container{
+        max-width: fit-content;
+        min-width: fit-content;
+        margin: auto;
+        background:rgb(9, 181, 224) ;
+        overflow: auto;
+        border: 5px solid royalblue;
+    }
+    
+    .pic {
+        max-width: fit-content;
+        min-width: fit-content;
+        max-height: fit-content;
+        width: auto;
+        margin: auto;
+        overflow: hidden;  
+    } 
+  
+}
+
+    
+
+
+    
+
+    footer{
+        padding: 10px;
+        font-size: 17px;
+        font-weight: bold;
+        text-align: center;
+        background-color: blue;
+        color: azure;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 1px;
+
+    }
+   
+    .information {
+       text-align: center;
+       font-size: larger;
+       color: rgb(19, 69, 231);
+    }
+p1{
+    text-align: center;
+}
+    
+       
+    
+
